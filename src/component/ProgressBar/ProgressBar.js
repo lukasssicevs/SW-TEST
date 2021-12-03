@@ -26,8 +26,6 @@ export class ProgressBar extends Component {
     let stepNumber = 0;
     let currentStep = 1;
 
-    console.log(checkoutStep);
-
     for (const [key] of Object.entries(stepMap)) {
       steps.push(key);
     }
@@ -37,8 +35,6 @@ export class ProgressBar extends Component {
         currentStep = index + 1;
       }
     });
-
-    console.log(currentStep);
 
     return (
       <div className="progress-bar">
