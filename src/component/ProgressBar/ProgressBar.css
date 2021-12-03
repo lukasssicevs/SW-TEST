@@ -1,0 +1,90 @@
+:root {
+  --activeColorBackground: #a82222;
+  --passiveColorBackground: #dbdbdb;
+  --activeColorCircleNumber: #fff;
+  --passiveColorCircleNumber: #9c9c9c;
+  --activeColorCircleTitle: #000;
+  --passiveColorCircleTitle: #adadad;
+}
+
+.progress-bar {
+  background-color: var(--breadcrumbs-background);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: medium;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5%;
+}
+
+.active-step-number,
+.passive-step-number {
+  background-color: var(--activeColorBackground);
+  color: var(--activeColorCircleNumber);
+  border-radius: 50px;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1.2s ease-out;
+}
+
+.passive-step-number {
+  background-color: var(--passiveColorBackground);
+  color: var(--passiveColorCircleNumber);
+}
+
+.active-step-value,
+.passive-step-value {
+  color: var(--activeColorCircleTitle);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1.2s ease-out;
+  text-align: center;
+}
+
+.passive-step-value {
+  color: var(--passiveColorCircleTitle);
+}
+
+.step-title {
+  width: 200px;
+}
+
+.active-margin-step-line,
+.passive-margin-step-line {
+  background-color: var(--activeColorBackground);
+  height: 6px;
+  width: 40%;
+  border-radius: 10px;
+  transition: all 1.2s ease-out;
+  bottom: 22px;
+}
+
+.passive-margin-step-line {
+  background-color: var(--passiveColorBackground);
+}
+
+.active-middle-step-line,
+.passive-middle-step-line {
+  background-color: var(--activeColorBackground);
+  height: 6px;
+  width: 20%;
+  border-radius: 10px;
+  transition: all 1.2s ease-out;
+  bottom: 22px;
+}
+
+.passive-middle-step-line {
+  background-color: var(--passiveColorBackground);
+}
