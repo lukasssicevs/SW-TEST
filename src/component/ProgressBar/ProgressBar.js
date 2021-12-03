@@ -16,7 +16,7 @@ export class ProgressBar extends Component {
   }
 
   renderStepSymbol(stepNumber, currentStep) {
-    return currentStep < stepNumber ? stepNumber : <span>&#10003;</span>;
+    return currentStep <= stepNumber ? stepNumber : <span>&#10003;</span>;
   }
 
   showSteps(stepMap, checkoutStep) {
